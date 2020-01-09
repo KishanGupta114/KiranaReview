@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container } from "react-bootstrap";
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.css';
+import Navbar from './components/Navbar/navbar'
+import Searchbar from './components/Searchbar/search'
+import userLogin from './components/Login/userLogin'
+import userSignup from './components/Signup/userSignup'
+import adminLogin from './components/Admin/adminLogin';
+import adminSignup from './components/Admin/adminSignup';
+import adminPanel from './components/AdminPanel/adminPanel';
+import dashBoard from './components/AdminPanel/sidebarMenu/dashBoard'
+import reviewRating from './components/AdminPanel/sidebarMenu/reviewRating'
+import addProduct from './components/AdminPanel/sidebarMenu/addProduct'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+        <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          
+          <Switch>
+            
+            <Route path='/search' component={Searchbar} />
+            <Route path='/userLogin' component={userLogin} />
+            <Route path='/userSignup' component={userSignup} />
+            
+            <Route path='/adminSignup' component={adminSignup} />
+            <Route path='/adminLogin' component={adminLogin} />
+            <Route path='/adminPanel' component={adminPanel} />
+            <Route path='/dashBoard' component={dashBoard} />
+            <Route path='/reviewRating' component={reviewRating} />
+            <Route path='/addProduct' component={addProduct} />
+            </Switch>
+        </div>
+      </BrowserRouter>
+
+      </Container>
   );
 }
 

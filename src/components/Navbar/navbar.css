@@ -1,29 +1,23 @@
-
-.header{
-    box-shadow:0px 2px 5px #dfdfdf;
-}
-
 .navbar {
     margin: 10px auto;
+    box-shadow: 0px 1.5px 0px #dfdfdf;
 }
 .navbar-brand{
    text-transform: uppercase;
 }
 .mr-auto{
-    justify-content: center;
-    margin-left: 220px;
+    justify-content: right;
+    margin-left: 51%;
 }   
 .nav-link{
-    margin-left: 55px;
+    margin-left: 50px;
     
     position: relative;
 }
 
 .dropdown:hover .dropdown-menu{
     display: block;
-    margin: 0;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
 }
-
-
-
-
