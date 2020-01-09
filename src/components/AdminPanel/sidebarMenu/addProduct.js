@@ -87,6 +87,7 @@ class addProduct extends Component {
                   </Form>
                   
                 </Grid.Column>
+                
               </Grid>
              
             </Container>
