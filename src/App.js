@@ -12,6 +12,7 @@ import adminPanel from './components/AdminPanel/adminPanel';
 import dashBoard from './components/AdminPanel/sidebarMenu/dashBoard'
 import reviewRating from './components/AdminPanel/sidebarMenu/reviewRating'
 import addProduct from './components/AdminPanel/sidebarMenu/addProduct'
+import manageProduct from './components/AdminPanel/sidebarMenu/manageProduct'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path='/dashBoard' component={dashBoard} />
             <Route path='/reviewRating' component={reviewRating} />
             <Route path='/addProduct' component={addProduct} />
+            <Route path='/manageProduct' component={manageProduct} />
             </Switch>
         </div>
       </BrowserRouter>

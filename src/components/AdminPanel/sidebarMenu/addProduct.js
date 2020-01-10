@@ -33,7 +33,7 @@ class addProduct extends Component {
            Add Product
             </Header>
                 <Grid centered columns={2}>
-                <Grid.Row centered columns={4}>  
+                <Grid.Row columns={4}>  
                 <Grid.Column>
                     <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                 </Grid.Column>
@@ -62,8 +62,9 @@ class addProduct extends Component {
                             selection
                             wrapSelection={false}
                             options={options}
-                            placeholder='Choose Product Brand'
+                            placeholder='Choose Or Add Product Brand'
                         />
+                        
                       </Form.Input>
                       <Form.Input fluid icon='list' iconPosition='left' placeholder='Category' >
                       <Dropdown
@@ -71,7 +72,7 @@ class addProduct extends Component {
                             selection
                             wrapSelection={false}
                             options={options}
-                            placeholder='Choose Product Category'
+                            placeholder='Choose Or Add Product Category'
                         />
                         
                       </Form.Input>

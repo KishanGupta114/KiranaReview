@@ -12,7 +12,7 @@ class navbar extends Component {
         return (
             
             <Container>
-                <Container>
+              
                 <Navbar bg="none" expand="lg">
                     <Navbar.Brand href="#home">KIRANA REVIEW</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -39,7 +39,7 @@ class navbar extends Component {
                             
                     </Navbar.Collapse>
                 </Navbar>
-                </Container>  
+               
                 
                
           </Container>
