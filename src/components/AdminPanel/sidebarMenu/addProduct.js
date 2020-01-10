@@ -9,6 +9,8 @@ const options = [
     { key: 2, text: 'Two', value: 2 },
     { key: 3, text: 'Three', value: 3 },
   ]
+
+  const ButtonExampleCircular = () => {}
 class addProduct extends Component {
 
     
@@ -24,6 +26,8 @@ class addProduct extends Component {
         });
         console.log(picture)
     }
+
+    
 
     render() {
 
@@ -81,16 +85,44 @@ class addProduct extends Component {
                        />
                       <Form.Input fluid icon='info' iconPosition='left' placeholder='Description' >
                         <TextArea placeholder='Description'></TextArea></Form.Input>
-                      <Button color='teal' fluid size='large'>
-                        Upload
-                      </Button>
+                      
+                       
+
+                      <Button animated='vertical' color='teal' fluid size='large'>
+                          <Button.Content visible>Upload Product</Button.Content>
+                          <Button.Content hidden>
+                            <Icon name='upload' />
+                          </Button.Content>
+                        </Button>
+                      <br />
+                      
+                     
+                          <Button animated color='teal'>
+                          <Button.Content visible>Edit</Button.Content>
+                          <Button.Content hidden>
+                            <Icon name='edit' />
+                          </Button.Content>
+                        </Button>
+                       
+                        <Button animated color='teal'>
+                          <Button.Content visible>Save</Button.Content>
+                          <Button.Content hidden>
+                            <Icon name='save' />
+                          </Button.Content>
+                        </Button>
+                       
                     </Segment>
                   </Form>
+                  
+                  
                   
                 </Grid.Column>
                 
               </Grid>
              
+
+              
+
             </Container>
         );
     }
