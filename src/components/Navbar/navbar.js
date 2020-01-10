@@ -30,8 +30,8 @@ class navbar extends Component {
                             </NavDropdown>
 
                             <NavDropdown title="My Account " id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#login">Login</NavDropdown.Item>
-                            <NavDropdown.Item href="#signup">SignUp</NavDropdown.Item>
+                            <NavDropdown.Item href="userLogin">Login</NavDropdown.Item>
+                            <NavDropdown.Item href="userSignup">SignUp</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/adminLogin">Admin</NavDropdown.Item>
                             </NavDropdown>
