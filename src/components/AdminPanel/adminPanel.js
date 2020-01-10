@@ -25,7 +25,7 @@ import './adminPanel.css'
               <Menu vertical>
                   <Menu.Item>
                     <Input placeholder='Search...' />
-                  </Menu.Item>
+                  </Menu.Item>     
 
                   <Menu.Item>
                     Dashboard Home
