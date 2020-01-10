@@ -27,7 +27,7 @@ const userSignup = () => (
         </Segment>
       </Form>
       <Message>
-        Already have an account? <a href='/adminLogin'>Login</a>
+        Already have an account? <a href='/userLogin'>Login</a>
       </Message>
     </Grid.Column>
   </Grid>
