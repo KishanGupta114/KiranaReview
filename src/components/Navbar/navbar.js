@@ -14,11 +14,11 @@ class navbar extends Component {
             <Container>
               
                 <Navbar bg="none" expand="lg">
-                    <Navbar.Brand href="#home">KIRANA REVIEW</Navbar.Brand>
+                    <Navbar.Brand href="/home">KIRANA REVIEW</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="/home">Home</Nav.Link>
                         
                             <NavDropdown title="Categories " id="basic-nav-dropdown">
                             <NavDropdown.Item href="#detergent">Detergent</NavDropdown.Item>

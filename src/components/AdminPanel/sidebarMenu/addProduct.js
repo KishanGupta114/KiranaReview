@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Container, Text } from 'react-bootstrap'
-import { Rating, Form, Dropdown, Dimmer, Message, Image, Segment, Button, Icon, Grid, List, Header, TextArea } from 'semantic-ui-react'
+import { Container } from 'react-bootstrap'
+import { Rating, Form, Dropdown, Image, Segment, Button, Icon, Grid, Header, TextArea } from 'semantic-ui-react'
 import ImageUploader from 'react-images-upload';
 import './addProduct.css'
 
@@ -10,7 +10,7 @@ const options = [
     { key: 3, text: 'Three', value: 3 },
   ]
 
-  const ButtonExampleCircular = () => {}
+ 
 class addProduct extends Component {
 
     

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.css';
 import Navbar from './components/Navbar/navbar'
@@ -13,16 +13,18 @@ import dashBoard from './components/AdminPanel/sidebarMenu/dashBoard'
 import reviewRating from './components/AdminPanel/sidebarMenu/reviewRating'
 import addProduct from './components/AdminPanel/sidebarMenu/addProduct'
 import manageProduct from './components/AdminPanel/sidebarMenu/manageProduct'
+import Home from './components/Home/home'
 
 function App() {
   return (
-    <Container>
+    <Container-Fluid>
         <BrowserRouter>
         <div className="App">
           <Navbar />
           
           <Switch>
             
+            <Route path='/home' component={Home} />
             <Route path='/search' component={Searchbar} />
             <Route path='/userLogin' component={userLogin} />
             <Route path='/userSignup' component={userSignup} />
@@ -38,7 +40,7 @@ function App() {
         </div>
       </BrowserRouter>
 
-      </Container>
+      </Container-Fluid>
   );
 }
 
