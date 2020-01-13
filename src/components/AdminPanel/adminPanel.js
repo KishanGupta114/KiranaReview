@@ -16,9 +16,7 @@ import './adminPanel.css'
 
     return ( 
       <Container-Fluid>
-          <BrowserRouter>
-            <div>
-
+     
                 <Header as='h2' color='teal' textAlign='center'>
                          Admin Panel
                 </Header>
@@ -45,6 +43,7 @@ import './adminPanel.css'
                     active={activeItem === 'review'}
                     onClick={this.handleItemClick}
                   >
+                  
                     Reviews & Rating
                     <Icon name='star outline' />
                   </Menu.Item></a>
@@ -86,14 +85,14 @@ import './adminPanel.css'
           <Icon name='ticket alternate' />
         </Menu.Item>
 
-        <Menu.Item
+        <a href="/addProduct"><Menu.Item
           name='addproduct'
           active={activeItem === 'addproduct'}
           onClick={this.handleItemClick}
         >
           Add Product
           <Icon name='shopping basket' />
-        </Menu.Item>
+        </Menu.Item></a>
 
         <Menu.Item
         name='manageproduct'
@@ -155,14 +154,14 @@ import './adminPanel.css'
           </Dropdown.Menu>
         </Dropdown>
       </Menu>
-      
-  </div>
-      <div>
+   
+          <BrowserRouter>
+          
           <Switch>
             <Route path='/reviewRating' component={reviewRating} />
             <Route path='/dashBoard' component={dashBoard} />
           </Switch>
-      </div>
+      
       </BrowserRouter>
       </Container-Fluid>
     )

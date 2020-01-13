@@ -24,7 +24,7 @@ function App() {
           
           <Switch>
             
-            <Route path='/home' component={Home} />
+          
             <Route path='/search' component={Searchbar} />
             <Route path='/userLogin' component={userLogin} />
             <Route path='/userSignup' component={userSignup} />
@@ -32,14 +32,17 @@ function App() {
             <Route path='/adminSignup' component={adminSignup} />
             <Route path='/adminLogin' component={adminLogin} />
             <Route path='/adminPanel' component={adminPanel} />
+            
             <Route path='/dashBoard' component={dashBoard} />
             <Route path='/reviewRating' component={reviewRating} />
             <Route path='/addProduct' component={addProduct} />
             <Route path='/manageProduct' component={manageProduct} />
             </Switch>
+            <Home />
         </div>
+        
       </BrowserRouter>
-
+      
       </Container-Fluid>
   );
 }

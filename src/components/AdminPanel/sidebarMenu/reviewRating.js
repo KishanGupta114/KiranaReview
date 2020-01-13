@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Feed, Button, Header, Image, Dropdown, Icon, Input, Menu } from 'semantic-ui-react'
+import { Feed, Button, Icon } from 'semantic-ui-react'
 import { Container } from 'react-bootstrap'
 
 
@@ -7,7 +7,6 @@ class reviewRating extends Component {
     render() {
         return (
             <Container>
-    
                 <Feed>
                     <Feed.Event>
                     <Feed.Label>
