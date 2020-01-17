@@ -13,7 +13,7 @@ class navbar extends Component {
             
             <Container>
               
-                <Navbar bg="none" expand="lg">
+                <Navbar bg="none" expand="lg" style={{ userSelect: 'none' }}>
                     <Navbar.Brand href="/home">KIRANA REVIEW</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

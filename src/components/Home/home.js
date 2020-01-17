@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         return( 
             
-            <Segment inverted vertical style={{ padding: '5em 0em' }}>
+            <Segment inverted vertical style={{ padding: '5em 0em', userSelect: 'none' }}>
             <Container>
               <Grid divided inverted stackable>
                 <Grid.Row>

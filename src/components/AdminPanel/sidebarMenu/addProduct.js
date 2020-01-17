@@ -7,8 +7,7 @@ import {
    Image, 
    Segment, 
    Button, 
-   Icon,
-   Table, 
+   Icon, 
    Grid, 
    Header, 
    TextArea 

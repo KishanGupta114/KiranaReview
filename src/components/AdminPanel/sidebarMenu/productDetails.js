@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container } from 'react-bootstrap'
 import _ from 'lodash'
 import faker from 'faker'
-import { Pagination, Search, Grid, Icon, Segment, Header, Table, Rating } from 'semantic-ui-react'
+import { Pagination, Search, Grid, Icon, Header, Table, Rating } from 'semantic-ui-react'
 
 const initialState = { isLoading: false, results: [], value: '' }
 
@@ -42,7 +42,7 @@ class productDetails extends Component {
       const { isLoading, value, results } = this.state
         return (
             <Container>
-            <Header as='h2' color='teal' textAlign='center' style = {{marginTop: 20}}>
+            <Header as='h2' color='teal' textAlign='center' style = {{marginTop: 20,  userSelect: 'none'}}>
             List Of Products
              </Header>
 
@@ -50,7 +50,7 @@ class productDetails extends Component {
              <Grid.Column>
              
                <Search
-               style={{margin: '0 0 0 4rem'}}
+               style={{margin: '0 0 0 4rem', userSelect: 'none'}}
                  placeholder='Search Product ...'
                  loading={isLoading}
                  onResultSelect={this.handleResultSelect}
@@ -65,7 +65,7 @@ class productDetails extends Component {
              
            </Grid>
 
-             <Table stackable celled padded>
+             <Table stackable celled padded style={{ userSelect: 'none' }}>
              <Table.Header>
               <Table.Row>
                 <Table.HeaderCell>Product ID</Table.HeaderCell>
@@ -137,6 +137,7 @@ class productDetails extends Component {
                 totalPages={5}
                 style={{margin: '0 0 1rem 1.5rem'}}
             /></div>
+            <Grid style={{ height: '30vh' }} />
            </Container>
         )
     }

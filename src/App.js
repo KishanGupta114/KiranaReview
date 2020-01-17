@@ -18,7 +18,7 @@ import Home from './components/Home/home'
 
 function App() {
   return (
-    <Container-Fluid>
+    <Container-Fluid style={{ userSelect: 'none' }}>
         <BrowserRouter>
         <div className="App">
           <Navbar />
@@ -37,7 +37,7 @@ function App() {
             <Route path='/addProduct' component={addProduct} />
             <Route path='/manageProduct' component={manageProduct} />
             <Route path='/productDetails' component={productDetails} />
-            </Switch>
+          </Switch>
             <Home />
         </div> 
       </BrowserRouter>

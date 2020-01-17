@@ -1,9 +1,9 @@
 import React from 'react'
 import './adminLogin.css'
-import { Button, Form, Grid, Icon, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Button, Form, Grid, Icon, Header,Message, Segment } from 'semantic-ui-react'
 
 const adminSignup = () => (
-  <Grid textAlign='center' style={{ height: '85vh' }} verticalAlign='middle'>
+  <Grid textAlign='center' style={{ height: '85vh', userSelect: 'none' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='teal' textAlign='center'>
       <Icon name='user' /> Admin Signup

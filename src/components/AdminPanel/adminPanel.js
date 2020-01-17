@@ -15,7 +15,7 @@ import './adminPanel.css'
     const { activeItem } = this.state
 
     return ( 
-      <Container-Fluid>
+      <Container-Fluid style={{ userSelect: 'none' }}>
      
                 <Header as='h2' color='teal' textAlign='center'>
                          Admin Panel

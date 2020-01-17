@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
 import { 
-    Container,
-    Nav,
-    Navbar,
-    Dropdown,
+    Container,   
     Button,
     FormControl,
-    Form,
-    NavDropdown,
-    Carousel
+    Form
  } from 'react-bootstrap';
 import './search.css'
 
@@ -18,7 +13,7 @@ import './search.css'
 
             
             <Container>
-            <Form className="justify-content-center" inline>
+            <Form className="justify-content-center" inline style={{ userSelect: 'none' }}>
             <FormControl type="text" placeholder="Search Products" className="mr-sm-2" />
             <Button className="mr-sm-2" variant="outline-info">Search</Button>
             </Form>
