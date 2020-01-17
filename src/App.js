@@ -13,6 +13,7 @@ import dashBoard from './components/AdminPanel/sidebarMenu/dashBoard'
 import reviewRating from './components/AdminPanel/sidebarMenu/reviewRating'
 import addProduct from './components/AdminPanel/sidebarMenu/addProduct'
 import manageProduct from './components/AdminPanel/sidebarMenu/manageProduct'
+import productDetails from './components/AdminPanel/sidebarMenu/productDetails'
 import Home from './components/Home/home'
 
 function App() {
@@ -23,8 +24,6 @@ function App() {
           <Navbar />
           
           <Switch>
-            
-          
             <Route path='/search' component={Searchbar} />
             <Route path='/userLogin' component={userLogin} />
             <Route path='/userSignup' component={userSignup} />
@@ -37,10 +36,10 @@ function App() {
             <Route path='/reviewRating' component={reviewRating} />
             <Route path='/addProduct' component={addProduct} />
             <Route path='/manageProduct' component={manageProduct} />
+            <Route path='/productDetails' component={productDetails} />
             </Switch>
             <Home />
-        </div>
-        
+        </div> 
       </BrowserRouter>
       
       </Container-Fluid>

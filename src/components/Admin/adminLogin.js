@@ -27,8 +27,9 @@ const adminLogin = () => (
       <Message>
         New to us? <a href='/adminSignup'>Sign Up</a>
       </Message>
-    </Grid.Column>
+    </Grid.Column> 
   </Grid>
+ 
 )
 
 export default adminLogin

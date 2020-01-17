@@ -103,14 +103,14 @@ import './adminPanel.css'
         <Icon name='warehouse' />
       </Menu.Item>
 
-        <Menu.Item
+        <a href="/productDetails"> <Menu.Item
           name='productdetail'
           active={activeItem === 'productdetail'}
           onClick={this.handleItemClick}
         >
           Product Details
           <Icon name='list' />
-        </Menu.Item>
+        </Menu.Item></a>
        
         <Menu.Item>
         Manage Users

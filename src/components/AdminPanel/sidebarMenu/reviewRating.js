@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Feed, Button, Icon } from 'semantic-ui-react'
+import { Feed, Header, Image, Grid, Button, Icon } from 'semantic-ui-react'
 import { Container } from 'react-bootstrap'
 
 
@@ -7,6 +7,17 @@ class reviewRating extends Component {
     render() {
         return (
             <Container>
+            <Header as='h2' color='teal' textAlign='center' style={{ marginTop: 20 }}>
+            Review & Rating
+             </Header>
+
+             <Grid stackable>
+             <Grid.Column width={4}>
+               <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+             </Grid.Column>
+             </Grid>
+
+
                 <Feed>
                     <Feed.Event>
                     <Feed.Label>
@@ -150,9 +161,7 @@ class reviewRating extends Component {
                     
                     </Feed.Event>
                 </Feed>
-                
-
-               
+                <Grid style={{ height: '10vh' }} /> 
             </Container>
 
         )

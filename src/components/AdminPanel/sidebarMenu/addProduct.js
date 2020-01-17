@@ -7,7 +7,8 @@ import {
    Image, 
    Segment, 
    Button, 
-   Icon, 
+   Icon,
+   Table, 
    Grid, 
    Header, 
    TextArea 
@@ -50,8 +51,8 @@ class addProduct extends Component {
 
 
              <Grid textAlign='center' verticalAlign='middle' stackable columns={3}>
-             <Grid.Column>
-               <Segment>
+             <Grid.Column style={{ maxWidth: 450 }}>
+               
                <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                <ImageUploader
                
@@ -61,10 +62,10 @@ class addProduct extends Component {
                  imgExtension={['.jpg', '.png', '.gif']}
                  maxFileSize={5242880}
                  />
-               </Segment>
+               
              </Grid.Column>
              <Grid.Column style={{ maxWidth: 450 }}>
-               <Segment>
+               
                  
                  <Form size='large'>
                      <Segment stacked>
@@ -90,9 +91,17 @@ class addProduct extends Component {
                          
                        </Form.Input>
                        <Form.Input fluid icon='inr' iconPosition='left' placeholder='Price / Unit' />
-                       <Rating icon='star' defaultRating={3} maxRating={5}
-                        />
-                       <Form.Input fluid icon='info' iconPosition='left' placeholder='Description' >
+                       <Button animated color='teal'>
+                       <Button.Content visible>Add more</Button.Content>
+                       <Button.Content hidden>
+                         <Icon name='plus' />
+                       </Button.Content>
+                     </Button>
+                     <br /><br />
+                       <p>Give your rating here </p>
+                       <Rating icon='star' defaultRating={3} maxRating={5} />
+                       <br /><br />
+                       <Form.Input>
                          <TextArea placeholder='Description'></TextArea></Form.Input>
                        
                         
@@ -122,12 +131,10 @@ class addProduct extends Component {
                         
                      </Segment>
                    </Form>  
-               </Segment>
+               
              </Grid.Column>
            </Grid>
-           <Grid textAlign='center' style={{ height: '10vh' }} verticalAlign='middle'>
-                
-           </Grid>     
+           <Grid style={{ height: '10vh' }} />     
             </Container>
         );
     }
