@@ -20,10 +20,10 @@ class navbar extends Component {
                         <Nav className="mr-auto">
                         <Nav.Link href="/home">Home</Nav.Link>
                         
-                            <NavDropdown title="Categories " id="basic-nav-dropdown">
+                            <NavDropdown title="Categories " id="basic-nav-dropdown" >
                             <NavDropdown.Item href="#detergent">Detergent</NavDropdown.Item>
                             <NavDropdown.Item href="#oil">Oil</NavDropdown.Item>
-                            <NavDropdown.Item href="#soap">Saop</NavDropdown.Item>
+                            <NavDropdown.Item href="#soap">Soap</NavDropdown.Item>
                             <NavDropdown.Item href="#biscuit">Biscuit</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#seemore">See More..</NavDropdown.Item>

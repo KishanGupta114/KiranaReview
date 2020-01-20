@@ -5,15 +5,165 @@ import {
     Grid,
     List,
     Header,
+    Rating,
+    Card, 
+    Icon,
+    Pagination,
+    Image
     
 } from 'semantic-ui-react'
 
 class Home extends Component {
     render() {
         return( 
+          <Container-Fluid>
+          <Container>
+         <Grid stackable style={{padding: '10px 0 10px 0', margin: '0 0 0 9.2rem'}}>
+         <h2 >Best Product Reviews and Feedback <Icon name='smile outline' /></h2>
+         </Grid>
+         </Container>
+          <Container>
+                    <Grid stackable centered relaxed='very' columns={4}>
+                    
+                            <Grid.Column>
+                            <Card centered>
+                              <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                              <Card.Content>
+                              <Card.Header>Item Name <Rating icon='star' disabled defaultRating={5} maxRating={5} /></Card.Header>
+                              <Card.Meta>Brand</Card.Meta>
+                              <Card.Meta>Category</Card.Meta>
+                              <Card.Content style={{paddingTop: '10px'}}>
+                              <Icon name='circle rupee sign' />
+                              </Card.Content>
+                            </Card.Content>
+                            <Card.Content>
+                              <a>
+                                <Icon name='info circle' />
+                                About Product
+                              </a>
+                            </Card.Content>
+                            
+                            </Card>
+                            </Grid.Column>
+                            <Grid.Column>
+                            <Card centered>
+                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                            <Card.Content>
+                            <Card.Header>Item Name <Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
+                            <Card.Meta>Brand</Card.Meta>
+                            <Card.Meta>Category</Card.Meta>
+                            <Card.Content style={{paddingTop: '10px'}}>
+                              <Icon name='rupee sign' />
+                              </Card.Content>
+                          </Card.Content>
+                          <Card.Content>
+                              <a>
+                                <Icon name='info circle' />
+                                About Product
+                              </a>
+                            </Card.Content>
+                          </Card>
+                            </Grid.Column>
+                            <Grid.Column>
+                            <Card centered>
+                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                            <Card.Content>
+                            <Card.Header>Item Name <Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
+                            <Card.Meta>Brand</Card.Meta>
+                            <Card.Meta>Category</Card.Meta>
+                            <Card.Content style={{paddingTop: '10px'}}>
+                              <Icon name='rupee sign' />
+                              </Card.Content>
+                          </Card.Content>
+                          <Card.Content>
+                              <a>
+                                <Icon name='info circle' />
+                                About Product
+                              </a>
+                            </Card.Content>
+                          </Card>
+                            </Grid.Column>
+                          </Grid>
+
+                          
+
+                          <Grid centered stackable relaxed='very' columns={4}>
+                          <Grid.Column>
+                          <Card centered>
+                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                            <Card.Content>
+                            <Card.Header>Item Name <Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
+                            <Card.Meta>Brand</Card.Meta>
+                            <Card.Meta>Category</Card.Meta>
+                            <Card.Content style={{paddingTop: '10px'}}>
+                              <Icon name='rupee sign' />
+                              </Card.Content>
+                          </Card.Content>
+                          <Card.Content>
+                              <a>
+                                <Icon name='info circle' />
+                                About Product
+                              </a>
+                            </Card.Content>
+                          </Card>
+                          </Grid.Column>
+                          <Grid.Column>
+                          <Card centered>
+                          <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                          <Card.Content>
+                          <Card.Header>Item Name <Rating icon='star' disabled defaultRating={3} maxRating={5} /></Card.Header>
+                          <Card.Meta>Brand</Card.Meta>
+                          <Card.Meta>Category</Card.Meta>
+                          <Card.Content style={{paddingTop: '10px'}}>
+                              <Icon name='rupee sign' />
+                              </Card.Content>
+                        </Card.Content>
+                        <Card.Content>
+                              <a>
+                                <Icon name='info circle' />
+                                About Product
+                              </a>
+                            </Card.Content>
+                        </Card>
+                          </Grid.Column>
+                          <Grid.Column>
+                          <Card centered>
+                          <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                          <Card.Content>
+                          <Card.Header>Item Name <Rating icon='star' disabled defaultRating={3} maxRating={5} /></Card.Header>
+                          <Card.Meta>Brand</Card.Meta>
+                          <Card.Meta>Category</Card.Meta>
+                          <Card.Content style={{paddingTop: '10px'}}>
+                              <Icon name='rupee sign' />
+                              </Card.Content>
+                        </Card.Content>
+                        <Card.Content>
+                              <a>
+                                <Icon name='info circle' />
+                                About Product
+                              </a>
+                            </Card.Content>
+                        </Card>
+                          </Grid.Column>
+                        </Grid>
+
+                        <Grid stackable centered relaxed='very' columns={4}>
+                        <Pagination
+                              defaultActivePage={1}
+                              firstItem={null}
+                              lastItem={null}
+                              pointing
+                              secondary
+                              totalPages={10}
+                            />
+                          
+                            </Grid>
+                          <Grid style={{ height: '10vh' }} />
+            </Container>
             
             <Segment inverted vertical style={{ padding: '5em 0em', userSelect: 'none' }}>
             <Container>
+            
               <Grid divided inverted stackable>
                 <Grid.Row>
                   <Grid.Column width={3}>
@@ -71,6 +221,7 @@ class Home extends Component {
             </Container>
           </Segment>
           
+        </Container-Fluid>
 
         )
 

@@ -2,7 +2,15 @@ import React, { Component } from 'react'
 import { Container } from 'react-bootstrap'
 import _ from 'lodash'
 import faker from 'faker'
-import { Pagination, Search, Grid, Icon, Header, Table, Rating } from 'semantic-ui-react'
+import {
+  Pagination,
+  Search, 
+  Grid, 
+  Icon, 
+  Header, 
+  Table, 
+  Rating 
+} from 'semantic-ui-react'
 
 const initialState = { isLoading: false, results: [], value: '' }
 

@@ -24,6 +24,7 @@ function App() {
           <Navbar />
           
           <Switch>
+          
             <Route path='/search' component={Searchbar} />
             <Route path='/userLogin' component={userLogin} />
             <Route path='/userSignup' component={userSignup} />
