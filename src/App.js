@@ -25,6 +25,7 @@ function App() {
           
           <Switch>
           
+          <Route path='/home' component={Home} />
             <Route path='/search' component={Searchbar} />
             <Route path='/userLogin' component={userLogin} />
             <Route path='/userSignup' component={userSignup} />
@@ -39,8 +40,9 @@ function App() {
             <Route path='/manageProduct' component={manageProduct} />
             <Route path='/productDetails' component={productDetails} />
           </Switch>
-            <Home />
+            
         </div> 
+
       </BrowserRouter>
       
       </Container-Fluid>

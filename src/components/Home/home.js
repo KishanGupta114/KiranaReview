@@ -18,7 +18,7 @@ class Home extends Component {
         return( 
           <Container-Fluid>
           <Container>
-         <Grid stackable style={{padding: '10px 0 10px 0', margin: '0 0 0 9.2rem'}}>
+         <Grid stackable centered style={{padding: '10px 0 10px 0', margin: '0 0 0 9.2rem'}}>
          <h2 >Best Product Reviews and Feedback <Icon name='smile outline' /></h2>
          </Grid>
          </Container>
@@ -27,14 +27,12 @@ class Home extends Component {
                     
                             <Grid.Column>
                             <Card centered>
-                              <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                              <Image src='https://images-na.ssl-images-amazon.com/images/I/71k8pP7gw1L._SX679_.jpg' />
                               <Card.Content>
-                              <Card.Header>Item Name <Rating icon='star' disabled defaultRating={5} maxRating={5} /></Card.Header>
-                              <Card.Meta>Brand</Card.Meta>
-                              <Card.Meta>Category</Card.Meta>
-                              <Card.Content style={{paddingTop: '10px'}}>
-                              <Icon name='circle rupee sign' />
-                              </Card.Content>
+                              <Card.Header>OREO <Rating icon='star' disabled defaultRating={5} maxRating={5} /></Card.Header>
+                              <Card.Meta>Cadbury</Card.Meta>
+                              <Card.Meta>Biscuit</Card.Meta>
+                              
                             </Card.Content>
                             <Card.Content>
                               <a>
@@ -47,13 +45,13 @@ class Home extends Component {
                             </Grid.Column>
                             <Grid.Column>
                             <Card centered>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                            <Image src='https://images-na.ssl-images-amazon.com/images/I/91nnaNniZdL._SY550_.jpg' />
                             <Card.Content>
-                            <Card.Header>Item Name <Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
-                            <Card.Meta>Brand</Card.Meta>
-                            <Card.Meta>Category</Card.Meta>
+                            <Card.Header>ALOO BHUJIA<Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
+                            <Card.Meta>Haldiram's </Card.Meta>
+                            <Card.Meta>Namkeen</Card.Meta>
                             <Card.Content style={{paddingTop: '10px'}}>
-                              <Icon name='rupee sign' />
+                              <Icon name='rupee sign' /> 88 | 400g
                               </Card.Content>
                           </Card.Content>
                           <Card.Content>
@@ -66,13 +64,13 @@ class Home extends Component {
                             </Grid.Column>
                             <Grid.Column>
                             <Card centered>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' style={{height: '10rem'}} />
+                            <Image src='https://images-na.ssl-images-amazon.com/images/I/71YAWrDWdBL._SX425_PIbundle-14,TopRight,0,0_AA425SH20_.jpg' />
                             <Card.Content>
-                            <Card.Header>Item Name <Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
-                            <Card.Meta>Brand</Card.Meta>
-                            <Card.Meta>Category</Card.Meta>
+                            <Card.Header>Dairy Milk <Rating icon='star' disabled defaultRating={4} maxRating={5} /></Card.Header>
+                            <Card.Meta>Cadbury</Card.Meta>
+                            <Card.Meta>Chocalate</Card.Meta>
                             <Card.Content style={{paddingTop: '10px'}}>
-                              <Icon name='rupee sign' />
+                              <Icon name='rupee sign' /> 10 | 12.5g
                               </Card.Content>
                           </Card.Content>
                           <Card.Content>
