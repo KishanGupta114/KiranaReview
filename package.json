@@ -22,7 +22,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "react-sidebar": "^3.0.2",
-    "semantic-ui": "^2.4.2",
+    "semantic-ui": "^2.5.0",
     "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
